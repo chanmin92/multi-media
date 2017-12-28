@@ -3,3 +3,15 @@
 Baseline 코드는 https://github.com/yunjey/show-attend-and-tell을 참고하였다.
 
 사용된 Highway LSTM은 Tesorflow 라이브러리 코드인 tensorflow/python/ops/rnn_cell_impl.py을 수정하였다.
+
+$ git clone https://github.com/chanmin92/multi-media.git
+$ cd /src
+$ git clone https://github.com/tylin/coco-caption.git
+
+
+$ pip install -r requirements.txt
+$ chmod +x ./download.sh
+$ ./download.sh
+
+$ python resize.py
+$ python prepro.py
